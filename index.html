@@ -11,7 +11,6 @@
         :root {
             --bg-dark: #0f1115;
             --bg-card: #181b22;
-            --bg-card-hover: #212530;
             --accent-gold: #d4af37;
             --accent-gold-light: #f3e5ab;
             --text-main: #e2e8f0;
@@ -39,29 +38,26 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, .brand-font {
+        h1, h2, h3, h4 {
             font-family: 'Cinzel', serif;
             letter-spacing: 0.5px;
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
 
-        /* Header & Navigation */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(15, 17, 21, 0.9);
+            background: rgba(15, 17, 21, 0.95);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000;
-            transition: var(--transition);
         }
 
         .nav-wrapper {
@@ -72,7 +68,7 @@
         }
 
         .logo {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--accent-gold);
             text-decoration: none;
@@ -115,16 +111,14 @@
             box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
 
-        /* Hero Section */
         .hero {
-            padding: 180px 0 100px;
+            padding: 160px 0 90px;
             text-align: center;
-            position: relative;
-            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
         }
 
         .hero-title {
-            font-size: 3.2rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             color: #fff;
             line-height: 1.2;
@@ -133,14 +127,14 @@
         .hero-title span {
             color: var(--accent-gold);
             display: block;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-top: 0.5rem;
             font-family: 'Inter', sans-serif;
             font-weight: 300;
         }
 
         .hero-subtitle {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: var(--text-muted);
             max-width: 680px;
             margin: 0 auto 2rem;
@@ -168,15 +162,14 @@
             color: var(--accent-gold-light);
         }
 
-        /* Section Global */
         .section {
-            padding: 90px 0;
+            padding: 80px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 3.5rem;
+            margin-bottom: 3rem;
         }
 
         .section-title {
@@ -192,8 +185,7 @@
             font-size: 0.95rem;
         }
 
-        /* About Section */
-        .about-card {
+        .about-card, .scholarship-box, .contact-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -209,10 +201,9 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Discography Section */
         .discography-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
 
@@ -279,21 +270,6 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: var(--transition);
-        }
-
-        .yt-link-btn:hover {
-            color: #ff7878;
-        }
-
-        /* Scholarship Section */
-        .scholarship-box {
-            background: linear-gradient(145deg, var(--bg-card), #13151b);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 2.5rem;
-            max-width: 900px;
-            margin: 0 auto;
         }
 
         .skill-list {
@@ -321,15 +297,9 @@
             font-size: 0.85rem;
         }
 
-        /* Contact Section */
         .contact-card {
             text-align: center;
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 3rem 2rem;
             max-width: 650px;
-            margin: 0 auto;
         }
 
         .email-display {
@@ -339,14 +309,8 @@
             margin: 1.5rem 0;
             display: block;
             text-decoration: none;
-            word-break: break-all;
         }
 
-        .email-display:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
         footer {
             padding: 2rem 0;
             text-align: center;
@@ -355,28 +319,18 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.3rem;
-            }
-            .nav-links {
-                display: none;
-            }
-            .section {
-                padding: 60px 0;
-            }
+            .hero-title { font-size: 2.2rem; }
+            .nav-links { display: none; }
+            .section { padding: 60px 0; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header>
         <div class="container nav-wrapper">
-            <a href="#" class="logo">
-                🎸 MISGANAW TADESSE
-            </a>
+            <a href="#" class="logo">🎸 MISGANAW TADESSE</a>
             <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#discography">Music & Albums</a></li>
@@ -387,7 +341,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">
@@ -395,7 +348,7 @@
                 <span>Rock Instrumental & Musical Work</span>
             </h1>
             <p class="hero-subtitle">
-                Expressing passion through electric guitar riffs, rock arrangements, and original instrumental compositions.
+                Expressing passion through live electric guitar solos, bass grooves, and original rock instrumental compositions in Cubase 5.
             </p>
             <div class="hero-buttons">
                 <a href="#discography" class="cta-btn">Listen to Albums</a>
@@ -404,7 +357,6 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
@@ -413,7 +365,7 @@
             </div>
             <div class="about-card">
                 <p class="about-text">
-                    Welcome! My name is Misganaw Tadesse. I am a passionate lover of rock instrumental music, using my gifts to compose original songs and full-length instrumental projects. 
+                    Welcome! My name is Misganaw Tadesse. I am a passionate lover of rock instrumental music, using my gifts to compose original songs and full-length instrumental projects.
                 </p>
                 <p class="about-text" style="margin-bottom: 0;">
                     Even with limited formal education in music, I believe in bringing what I have to the Lord and trusting Him with my creative work. Music is an avenue of worship, joy, and continual growth.
@@ -422,7 +374,6 @@
         </div>
     </section>
 
-    <!-- Discography Section -->
     <section id="discography" class="section">
         <div class="container">
             <div class="section-header">
@@ -431,7 +382,6 @@
             </div>
 
             <div class="discography-grid">
-                <!-- Mini Album -->
                 <div class="album-card">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/xOvQjy9K004" title="Misganaw Tadesse - Mini Album" allowfullscreen></iframe>
@@ -440,13 +390,10 @@
                         <div class="album-meta">Mini Album</div>
                         <h3 class="album-title">Original Mini Album</h3>
                         <p class="album-desc">A collection of original songs featuring melodious structures and rock dynamics.</p>
-                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" class="yt-link-btn">
-                            Watch on YouTube ↗
-                        </a>
+                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" class="yt-link-btn">Watch on YouTube ↗</a>
                     </div>
                 </div>
 
-                <!-- Instrumental Album -->
                 <div class="album-card">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/SXOcjP_wcRQ" title="Misganaw Tadesse - Instrumental Album" allowfullscreen></iframe>
@@ -455,16 +402,13 @@
                         <div class="album-meta">Full Album</div>
                         <h3 class="album-title">Rock Instrumental Album</h3>
                         <p class="album-desc">An all-instrumental project focused on electric guitar melodies, bass rhythms, and driving rock arrangements.</p>
-                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" class="yt-link-btn">
-                            Watch on YouTube ↗
-                        </a>
+                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" class="yt-link-btn">Watch on YouTube ↗</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Scholarship & Academic Portfolio -->
     <section id="academic" class="section">
         <div class="container">
             <div class="section-header">
@@ -474,7 +418,7 @@
 
             <div class="scholarship-box">
                 <p class="about-text">
-                    Even without formal music education, I strongly believe in the importance of developing one's skills. In my current creative workflow, I listen closely to existing rock tracks to recreate and imitate their sound, following my ear to compose and arrange music. For mixing, I continuously seek advice from AI tools and digital learning resources to guide my understanding.
+                    Operating primarily in <strong>Cubase 5</strong>, I record my lead electric guitars live, incorporate live bass on select tracks, and build foundational rhythms using VST virtual instruments for drums and bass. I listen closely to existing rock tracks to recreate and imitate their sound by ear, while consulting learning resources and AI guidance to support my mixing process.
                 </p>
                 <p class="about-text">
                     Recognizing that my current musical knowledge is limited, I have a deep desire to receive formal education in music theory, arrangement, performance, recording, and mixing knowledge under structured academic guidance.
@@ -482,23 +426,22 @@
 
                 <div class="skill-list">
                     <div class="skill-item">
-                        <h4>Guitar & Bass Arrangements</h4>
-                        <p>Developing tone, rhythm synchronization, and melodic leads by ear.</p>
+                        <h4>Live Lead & Bass Guitar</h4>
+                        <p>Performing expressional lead lines and live bass grooves.</p>
                     </div>
                     <div class="skill-item">
-                        <h4>Audio Recording & Production</h4>
-                        <p>Exploring home studio recording techniques and DAW tools.</p>
+                        <h4>Cubase 5 Production</h4>
+                        <p>Arranging multi-track sessions, VSTs, and audio mixing.</p>
                     </div>
                     <div class="skill-item">
-                        <h4>Mixing & Sound Design</h4>
-                        <p>Learning EQ, dynamic processing, and spatial balance through practical experimentation.</p>
+                        <h4>Ear Training & Imitation</h4>
+                        <p>Studying professional rock tracks to model tone and arrangement.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <div class="contact-card">
@@ -518,7 +461,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 Misganaw Tadesse (Halleluya Studio). All rights reserved.</p>
