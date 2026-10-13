@@ -1,0 +1,321 @@
+<!-- ... existing code ... -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misganaw Tadesse | Christian Musician & Scholarship Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rockdark: '#0a0b0e',
+                        carddark: '#141721',
+                        borderdark: '#222738',
+                        goldaccent: '#d4af37',
+                        goldglow: '#f3e5ab'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0b0e;
+            color: #e2e8f0;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-rockdark text-slate-100 min-h-screen selection:bg-goldaccent selection:text-black">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-rockdark/80 backdrop-blur-md border-b border-borderdark">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl font-bold tracking-wider text-goldaccent flex items-center gap-2">
+                <span>🎸</span> Misganaw Tadesse
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-goldaccent transition-colors">Faith & Calling</a>
+                <a href="#portfolio" class="hover:text-goldaccent transition-colors">Music & Discography</a>
+                <a href="#scholarship" class="hover:text-goldaccent transition-colors">Scholarship & Growth</a>
+                <a href="#contact" class="px-4 py-2 rounded-full border border-goldaccent text-goldaccent hover:bg-goldaccent hover:text-black transition-all">Contact</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-300 focus:outline-none" aria-label="Toggle navigation menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-carddark border-b border-borderdark px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-goldaccent py-1">Faith & Calling</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-goldaccent py-1">Music & Discography</a>
+            <a href="#scholarship" class="block text-slate-300 hover:text-goldaccent py-1">Scholarship & Growth</a>
+            <a href="#contact" class="block text-goldaccent py-1 font-semibold">Contact</a>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-glow overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-goldaccent/10 border border-goldaccent/30 text-goldaccent text-xs font-semibold uppercase tracking-widest mb-6">
+                <span>✦</span> Soli Deo Gloria <span>✦</span>
+            </div>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6">
+                Misganaw Tadesse
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 font-light mb-8 max-w-3xl mx-auto leading-relaxed">
+                Using God-Given Music Talents to Glorify the Lord
+            </p>
+            <div class="bg-carddark/80 border border-borderdark rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto mb-10 shadow-2xl backdrop-blur-sm">
+                <p class="text-goldaccent font-serif italic text-base sm:text-lg leading-relaxed">
+                    "Taking what the Lord has placed in my hands and bringing it back to Him—trusting that He will bless and multiply it for His glory, just like the five loaves and two fish."
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-goldaccent text-black font-semibold hover:bg-goldglow transition-all shadow-lg shadow-goldaccent/20">
+                    Listen to Music
+                </a>
+                <a href="#scholarship" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-goldaccent/50 bg-carddark text-goldaccent hover:bg-goldaccent hover:text-black transition-all">
+                    Scholarship Portfolio
+                </a>
+                <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-borderdark bg-carddark text-slate-300 hover:border-red-500 hover:text-red-400 transition-all flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5 fill-current text-red-500" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    @halleluyastudio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-carddark/50 border-y border-borderdark">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl font-bold text-white mb-4">Faith & Calling</h2>
+                <div class="w-16 h-1 bg-goldaccent mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                    <div class="w-48 h-48 rounded-2xl bg-gradient-to-br from-goldaccent/20 to-borderdark border border-goldaccent/40 flex items-center justify-center text-6xl shadow-2xl">
+                        ✝️
+                    </div>
+                </div>
+                <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed font-light">
+                    <p>
+                        My name is <strong class="text-white font-medium">Misganaw Tadesse</strong>. I am a Christian musician and producer behind <strong class="text-goldaccent font-medium">Halleluya Studio</strong>.
+                    </p>
+                    <p>
+                        Though my formal musical knowledge is limited, I place my complete trust in God's guidance. What matters most is bringing whatever humble gifts we have to the Lord, knowing He takes our small offerings and transforms them through His grace to touch hearts and glorify His name.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">Music & Discography</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Original rock instrumental works created to offer praise and glory to God.</p>
+            <div class="w-16 h-1 bg-goldaccent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
+            <!-- Album 1 -->
+            <div class="bg-carddark border border-borderdark rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                <div class="relative aspect-video bg-black">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/xOvQjy9K004" title="Rock Mini Album - Misganaw Tadesse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-goldaccent/10 text-goldaccent text-xs font-semibold uppercase tracking-wider mb-3">Mini Album</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Christian Rock Mini Album</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            A collection of rock compositions crafted with passion to express faith, praise, and devotion to God.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderdark flex items-center justify-between">
+                        <span class="text-xs text-slate-500 font-mono">Halleluya Studio</span>
+                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-goldaccent hover:text-goldglow transition-colors">
+                            <span>Watch on YouTube</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album 2 -->
+            <div class="bg-carddark border border-borderdark rounded-2xl overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                <div class="relative aspect-video bg-black">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/SXOcjP_wcRQ" title="Instrumental Album - Misganaw Tadesse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-goldaccent/10 text-goldaccent text-xs font-semibold uppercase tracking-wider mb-3">Instrumental Work</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Rock Instrumental Album</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            An instrumental rock work designed for spiritual meditation, reflection, and quiet worship before the Lord.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-borderdark flex items-center justify-between">
+                        <span class="text-xs text-slate-500 font-mono">Halleluya Studio</span>
+                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-goldaccent hover:text-goldglow transition-colors">
+                            <span>Watch on YouTube</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gradient-to-r from-carddark via-borderdark/40 to-carddark border border-borderdark text-center">
+            <p class="text-slate-300 text-sm mb-3">Explore more praise recordings and creative projects on my official YouTube Channel.</p>
+            <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-goldaccent hover:text-goldglow font-semibold text-sm">
+                <span>Visit YouTube Channel (@halleluyastudio)</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="scholarship" class="py-24 bg-carddark/50 border-y border-borderdark">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-3 py-1 rounded-full bg-goldaccent/10 border border-goldaccent/30 text-goldaccent text-xs font-semibold uppercase tracking-wider">Aspirations for Growth</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-3 mb-4">Scholarship & Academic Portfolio</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm">
+                    Seeking music scholarship opportunities to receive formal education, expand God's gift, and serve with greater excellence.
+                </p>
+                <div class="w-16 h-1 bg-goldaccent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Objectives Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-carddark border border-borderdark p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-goldaccent/10 border border-goldaccent/30 flex items-center justify-center text-goldaccent text-2xl mb-6">🕊️</div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Desire for Musical Learning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Recognizing that my current musical knowledge is limited, I have a deep heart desire to receive formal education in music theory, arrangement, and performance. I pray for a scholarship opportunity that will allow me to study and cultivate this gift under guided leadership.
+                    </p>
+                </div>
+                <div class="bg-carddark border border-borderdark p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-goldaccent/10 border border-goldaccent/30 flex items-center justify-center text-goldaccent text-2xl mb-6">🎶</div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Glorifying God Through Song</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        My ultimate goal in pursuing musical education is not personal acclaim, but to serve God and others more effectively. With proper academic guidance, I hope to compose and produce music that lifts spirits and points people to God's love.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skill Matrix framed through God-given abilities -->
+            <h3 class="font-serif text-2xl font-bold text-white text-center mb-8">God-Given Musical Focus</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="p-6 bg-carddark border border-borderdark rounded-xl text-center">
+                    <div class="text-3xl mb-3">🎸</div>
+                    <h4 class="font-bold text-white text-base mb-2">Guitars & Bass</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Exploring electric guitar arrangements, rhythm dynamics, and foundational basslines to support melody.</p>
+                </div>
+                <div class="p-6 bg-carddark border border-borderdark rounded-xl text-center">
+                    <div class="text-3xl mb-3">🎹</div>
+                    <h4 class="font-bold text-white text-base mb-2">Keyboards & Harmony</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Using synth textures and keyboard harmonies to create reflective, atmospheric worship environments.</p>
+                </div>
+                <div class="p-6 bg-carddark border border-borderdark rounded-xl text-center">
+                    <div class="text-3xl mb-3">🎧</div>
+                    <h4 class="font-bold text-white text-base mb-2">Audio Recording</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Learning foundational digital recording and mixing principles to share music freely through YouTube.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-3xl font-bold text-white mb-4">Contact & Inquiries</h2>
+            <p class="text-slate-400 max-w-md mx-auto text-sm">For scholarship opportunities, guidance, or Christian musical fellowship.</p>
+            <div class="w-16 h-1 bg-goldaccent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-carddark border border-borderdark p-6 rounded-2xl flex flex-col items-center text-center">
+                <div class="text-2xl text-goldaccent mb-3">✉️</div>
+                <h4 class="font-bold text-white text-sm mb-1">Email</h4>
+                <a href="mailto:misganawt@gmail.com" class="text-xs text-goldaccent hover:underline">misganawt@gmail.com</a>
+            </div>
+            <div class="bg-carddark border border-borderdark p-6 rounded-2xl flex flex-col items-center text-center">
+                <div class="text-2xl text-goldaccent mb-3">📺</div>
+                <h4 class="font-bold text-white text-sm mb-1">YouTube Channel</h4>
+                <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener noreferrer" class="text-xs text-goldaccent hover:underline">@halleluyastudio</a>
+            </div>
+            <div class="bg-carddark border border-borderdark p-6 rounded-2xl flex flex-col items-center text-center">
+                <div class="text-2xl text-goldaccent mb-3">📍</div>
+                <h4 class="font-bold text-white text-sm mb-1">Mission</h4>
+                <span class="text-xs text-slate-400">Glorifying God Through Music</span>
+            </div>
+        </div>
+
+        <!-- Quick Contact Form -->
+        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been prepared for Misganaw Tadesse.');" class="bg-carddark border border-borderdark p-8 rounded-2xl space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-2">Your Name</label>
+                    <input type="text" required placeholder="Full Name" class="w-full bg-rockdark border border-borderdark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-goldaccent">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-400 mb-2">Your Email</label>
+                    <input type="email" required placeholder="email@example.com" class="w-full bg-rockdark border border-borderdark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-goldaccent">
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs font-medium text-slate-400 mb-2">Subject</label>
+                <input type="text" required placeholder="Scholarship Opportunity / Message" class="w-full bg-rockdark border border-borderdark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-goldaccent">
+            </div>
+            <div>
+                <label class="block text-xs font-medium text-slate-400 mb-2">Message</label>
+                <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-rockdark border border-borderdark rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-goldaccent"></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 rounded-xl bg-goldaccent text-black font-semibold hover:bg-goldglow transition-all">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <footer class="bg-rockdark pt-12 pb-12 border-t border-borderdark">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
+            <div class="text-xs text-slate-500 space-y-2">
+                <p>© 2026 Misganaw Tadesse · Halleluya Studio. All rights reserved.</p>
+                <p class="text-goldaccent/80 font-serif font-medium">Soli Deo Gloria — All Glory to God Alone</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
