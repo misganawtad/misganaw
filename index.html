@@ -180,4 +180,350 @@
         }
 
         .section-title {
-            font-size
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        /* About Section */
+        .about-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            color: var(--text-main);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Discography Section */
+        .discography-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        .album-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .album-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .album-info {
+            padding: 1.5rem;
+        }
+
+        .album-title {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .album-meta {
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .album-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .yt-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ff4e4e;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .yt-link-btn:hover {
+            color: #ff7878;
+        }
+
+        /* Scholarship Section */
+        .scholarship-box {
+            background: linear-gradient(145deg, var(--bg-card), #13151b);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 3px solid var(--accent-gold);
+            padding: 1rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .skill-item h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .skill-item p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Contact Section */
+        .contact-card {
+            text-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 3rem 2rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .email-display {
+            font-size: 1.4rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin: 1.5rem 0;
+            display: block;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .email-display:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.3rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                🎸 MISGANAW TADESSE
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#discography">Music & Albums</a></li>
+                <li><a href="#academic">Scholarship & Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="cta-btn">YouTube Channel</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Misganaw Tadesse
+                <span>Rock Instrumental & Musical Work</span>
+            </h1>
+            <p class="hero-subtitle">
+                Expressing passion through electric guitar riffs, rock arrangements, and original instrumental compositions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#discography" class="cta-btn">Listen to Albums</a>
+                <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="btn-outline">Visit Halleluya Studio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-desc">My journey with music and rock instrumentals</p>
+            </div>
+            <div class="about-card">
+                <p class="about-text">
+                    Welcome! My name is Misganaw Tadesse. I am a passionate lover of rock instrumental music, using my gifts to compose original songs and full-length instrumental projects. 
+                </p>
+                <p class="about-text" style="margin-bottom: 0;">
+                    Even with limited formal education in music, I believe in bringing what I have to the Lord and trusting Him with my creative work. Music is an avenue of worship, joy, and continual growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="discography" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Music Projects</h2>
+                <p class="section-desc">Mini Album & Rock Instrumental Work</p>
+            </div>
+
+            <div class="discography-grid">
+                <!-- Mini Album -->
+                <div class="album-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/xOvQjy9K004" title="Misganaw Tadesse - Mini Album" allowfullscreen></iframe>
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">Mini Album</div>
+                        <h3 class="album-title">Original Mini Album</h3>
+                        <p class="album-desc">A collection of original songs featuring melodious structures and rock dynamics.</p>
+                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" class="yt-link-btn">
+                            Watch on YouTube ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instrumental Album -->
+                <div class="album-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/SXOcjP_wcRQ" title="Misganaw Tadesse - Instrumental Album" allowfullscreen></iframe>
+                    </div>
+                    <div class="album-info">
+                        <div class="album-meta">Full Album</div>
+                        <h3 class="album-title">Rock Instrumental Album</h3>
+                        <p class="album-desc">An all-instrumental project focused on electric guitar melodies, bass rhythms, and driving rock arrangements.</p>
+                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" class="yt-link-btn">
+                            Watch on YouTube ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship & Academic Portfolio -->
+    <section id="academic" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Scholarship & Academic Portfolio</h2>
+                <p class="section-desc">Desire for formal growth and skill development</p>
+            </div>
+
+            <div class="scholarship-box">
+                <p class="about-text">
+                    Even without formal music education, I strongly believe in the importance of developing one's skills. In my current creative workflow, I listen closely to existing rock tracks to recreate and imitate their sound, following my ear to compose and arrange music. For mixing, I continuously seek advice from AI tools and digital learning resources to guide my understanding.
+                </p>
+                <p class="about-text">
+                    Recognizing that my current musical knowledge is limited, I have a deep desire to receive formal education in music theory, arrangement, performance, recording, and mixing knowledge under structured academic guidance.
+                </p>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h4>Guitar & Bass Arrangements</h4>
+                        <p>Developing tone, rhythm synchronization, and melodic leads by ear.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Audio Recording & Production</h4>
+                        <p>Exploring home studio recording techniques and DAW tools.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Mixing & Sound Design</h4>
+                        <p>Learning EQ, dynamic processing, and spatial balance through practical experimentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-card">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Get In Touch</h2>
+                <p class="section-desc">
+                    For inquiries, scholarship discussions, or collaboration requests, please feel free to reach out via email or subscribe on YouTube.
+                </p>
+                
+                <a href="mailto:misganawt@gmail.com" class="email-display">misganawt@gmail.com</a>
+
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="cta-btn">
+                        Subscribe on YouTube (@halleluyastudio)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Misganaw Tadesse (Halleluya Studio). All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
