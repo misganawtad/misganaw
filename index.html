@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misganaw Tadesse | Music Portfolio</title>
+    <title>Misganaw Tadesse | Guitarist, Composer & Producer</title>
+    <meta name="description" content="Misganaw Tadesse is a guitarist, composer and self-taught producer from Ethiopia, seeking formal training in music theory, arrangement, recording and mixing. Listen to original music and instrumentals.">
+    <meta property="og:title" content="Misganaw Tadesse | Guitarist, Composer & Producer">
+    <meta property="og:description" content="Original music and rock instrumentals by a self-taught guitarist and producer seeking formal music training.">
+    <meta property="og:type" content="website">
+    <!-- To add a social-share image, upload one (1200x630) and add:
+    <meta property="og:image" content="https://YOUR-SITE/share.jpg"> -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎸</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +35,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 90px;
         }
 
         body {
@@ -41,6 +49,11 @@
         h1, h2, h3, h4 {
             font-family: 'Cinzel', serif;
             letter-spacing: 0.5px;
+        }
+
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--accent-gold-light);
+            outline-offset: 3px;
         }
 
         .container {
@@ -96,6 +109,7 @@
         }
 
         .cta-btn {
+            display: inline-block;
             background: linear-gradient(135deg, var(--accent-gold), #b8860b);
             color: #0f1115;
             padding: 0.6rem 1.4rem;
@@ -148,6 +162,7 @@
         }
 
         .btn-outline {
+            display: inline-block;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
             padding: 0.6rem 1.4rem;
@@ -199,6 +214,10 @@
             font-size: 1.05rem;
             line-height: 1.8;
             margin-bottom: 1.5rem;
+        }
+
+        .about-text:last-child {
+            margin-bottom: 0;
         }
 
         .discography-grid {
@@ -266,10 +285,14 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: #ff4e4e;
+            color: #ff6b6b;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
+        }
+
+        .yt-link-btn:hover {
+            text-decoration: underline;
         }
 
         .skill-list {
@@ -297,6 +320,31 @@
             font-size: 0.85rem;
         }
 
+        .goals-list {
+            list-style: none;
+            margin: 1.5rem 0 0;
+            display: grid;
+            gap: 0.9rem;
+        }
+
+        .goals-list li {
+            padding-left: 1.4rem;
+            position: relative;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .goals-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.7em;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+        }
+
         .contact-card {
             text-align: center;
             max-width: 650px;
@@ -309,6 +357,7 @@
             margin: 1.5rem 0;
             display: block;
             text-decoration: none;
+            word-break: break-word;
         }
 
         footer {
@@ -323,6 +372,15 @@
             .hero-title { font-size: 2.2rem; }
             .nav-links { display: none; }
             .section { padding: 60px 0; }
+            .discography-grid { grid-template-columns: 1fr; }
+            .about-card, .scholarship-box, .contact-card { padding: 1.5rem; }
+            .logo { font-size: 1rem; }
+            .cta-btn { padding: 0.5rem 1rem; font-size: 0.9rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { transition: none !important; }
         }
     </style>
 </head>
@@ -332,12 +390,13 @@
         <div class="container nav-wrapper">
             <a href="#" class="logo">🎸 MISGANAW TADESSE</a>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#discography">Music & Albums</a></li>
-                <li><a href="#academic">Scholarship & Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#process">Process & Skills</a></li>
+                <li><a href="#goals">Study Goals</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="cta-btn">YouTube Channel</a>
+            <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener" class="cta-btn">YouTube</a>
         </div>
     </header>
 
@@ -345,14 +404,14 @@
         <div class="container">
             <h1 class="hero-title">
                 Misganaw Tadesse
-                <span>Music & Instrumental Portfolio</span>
+                <span>Guitarist, Composer & Producer</span>
             </h1>
             <p class="hero-subtitle">
-                Original music, guitar arrangements, and rock instrumentals.
+                Original songs and rock instrumentals, written, played and recorded by me. Shaped by Hillsong's 2000–2010 sound and the evangelical church music of Ethiopia.
             </p>
             <div class="hero-buttons">
-                <a href="#discography" class="cta-btn">Listen to Music</a>
-                <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="btn-outline">Visit YouTube Channel</a>
+                <a href="#music" class="cta-btn">Listen to my music</a>
+                <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener" class="btn-outline">Visit YouTube channel</a>
             </div>
         </div>
     </section>
@@ -361,74 +420,79 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-desc">My journey with music and composition</p>
+                <p class="section-desc">Where my music comes from</p>
             </div>
             <div class="about-card">
+                <!-- OPTIONAL: add a photo of yourself playing here, for example:
+                <img src="your-photo.jpg" alt="Misganaw Tadesse playing electric guitar" style="width:100%;max-height:420px;object-fit:cover;border-radius:6px;margin-bottom:1.5rem;"> -->
                 <p class="about-text">
-                    Welcome! My name is Misganaw Tadesse. I simply love music, especially rock music, and I am deeply influenced by the sound of Hillsong during the 2000–2010 era, as well as Ethiopian evangelical church music.
+                    I'm Misganaw Tadesse, a guitarist and self-taught producer from Ethiopia. I write and record rock music, and my sound is shaped by Hillsong's music from 2000 to 2010 and by Ethiopian evangelical church music.
                 </p>
-                <p class="about-text" style="margin-bottom: 0;">
-                    Even though I didn't have formal music education, I believe in being faithful to bring whatever I have to God—just like the five loaves and two fish in the Bible—trusting Him to bless and use it. Ethiopian church music may not be as technically advanced as music in other parts of the world, but we have witnessed God powerfully use faithful musicians to impact countlessly many lives in Ethiopia. Following their example, I try to do something with what I have and continue in it. Recognizing that my current musical knowledge is limited, I have a deep desire to receive formal education in music theory, arrangement, performance, recording, and mixing knowledge under structured academic guidance.
+                <p class="about-text">
+                    I have no formal music education. I bring what I have to God, like the five loaves and two fish in the Bible, and trust Him to use it. Ethiopian church music taught me that faithfulness matters as much as technique. I have seen God use faithful musicians to touch countless lives in Ethiopia, and I want to follow their example.
+                </p>
+                <p class="about-text">
+                    I now want to add technical skill to that foundation, through structured study of music theory, arrangement, performance, recording and mixing.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="discography" class="section">
+    <section id="music" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Music & Instrumental Work</h2>
-                <p class="section-desc">Original compositions and arrangements</p>
+                <h2 class="section-title">Start Here: My Music</h2>
+                <p class="section-desc">Two projects that show my writing, guitar playing and production</p>
             </div>
 
             <div class="discography-grid">
                 <div class="album-card">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/xOvQjy9K004" title="Misganaw Tadesse - Mini Album" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/xOvQjy9K004" title="Misganaw Tadesse - Original Mini Album" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="album-info">
                         <div class="album-meta">Mini Album</div>
                         <h3 class="album-title">Original Mini Album</h3>
-                        <p class="album-desc">A collection of original songs featuring melodious structures and diverse styles.</p>
-                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" class="yt-link-btn">Watch on YouTube ↗</a>
+                        <p class="album-desc">Original songs I wrote, arranged and recorded myself, showing my songwriting and melodic style.</p>
+                        <a href="https://youtu.be/xOvQjy9K004" target="_blank" rel="noopener" class="yt-link-btn">Watch on YouTube ↗</a>
                     </div>
                 </div>
 
                 <div class="album-card">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/SXOcjP_wcRQ" title="Misganaw Tadesse - Instrumental Album" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/SXOcjP_wcRQ" title="Misganaw Tadesse - Instrumental Album" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="album-info">
                         <div class="album-meta">Full Album</div>
                         <h3 class="album-title">Instrumental Album</h3>
-                        <p class="album-desc">An all-instrumental project focused on guitar melodies, rhythms, and rock arrangements.</p>
-                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" class="yt-link-btn">Watch on YouTube ↗</a>
+                        <p class="album-desc">An all-instrumental project built on live electric guitar, with guitar melodies, rhythms and rock arrangements.</p>
+                        <a href="https://youtu.be/SXOcjP_wcRQ" target="_blank" rel="noopener" class="yt-link-btn">Watch on YouTube ↗</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="academic" class="section">
+    <section id="process" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Scholarship & Academic Portfolio</h2>
-                <p class="section-desc">Desire for formal growth and skill development</p>
+                <h2 class="section-title">My Process & Skills</h2>
+                <p class="section-desc">How I make music today</p>
             </div>
 
             <div class="scholarship-box">
                 <p class="about-text">
-                    In my production workflow, I record my lead electric guitars live, incorporate live bass on select tracks, and build foundational rhythms using VST virtual instruments for drums and bass. I listen closely to existing music tracks to recreate and imitate their sound by ear, while consulting learning resources and AI guidance to support my mixing process.
+                    I record my lead electric guitars live, add live bass on select tracks, and build the foundation with virtual drum and bass instruments (VSTs). I learn by listening closely to professional tracks and recreating their sound by ear, and I use learning resources and AI guidance to support my mixing. This works, but I have reached the point where I need a teacher to show me what I can't yet see on my own.
                 </p>
 
                 <div class="skill-list">
                     <div class="skill-item">
                         <h4>Live Lead & Bass Guitar</h4>
-                        <p>Performing expressional lead lines and live bass grooves.</p>
+                        <p>Expressive lead lines and live bass grooves.</p>
                     </div>
                     <div class="skill-item">
                         <h4>Music Production</h4>
-                        <p>Arranging multi-track sessions, VSTs, and audio mixing.</p>
+                        <p>Multi-track arranging, VST instruments and mixing.</p>
                     </div>
                     <div class="skill-item">
                         <h4>Ear Training & Imitation</h4>
@@ -439,18 +503,43 @@
         </div>
     </section>
 
+    <section id="goals" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Want to Study</h2>
+                <p class="section-desc">The training I'm looking for, and why</p>
+            </div>
+
+            <div class="about-card">
+                <p class="about-text">
+                    I am looking for formal, mentored training in contemporary music. These are the skills I want to build:
+                </p>
+                <ul class="goals-list">
+                    <li><strong>Music theory and arrangement:</strong> to write and arrange with confidence instead of relying only on my ear.</li>
+                    <li><strong>Performance:</strong> to grow as a guitarist with expert feedback.</li>
+                    <li><strong>Recording and mixing:</strong> to reach professional sound quality in my own productions.</li>
+                </ul>
+                <p class="about-text" style="margin-top: 1.5rem;">
+                    I want to use this training to serve the church, and to strengthen the music I make for Ethiopian congregations.
+                </p>
+                <!-- OPTIONAL: add a recommendation here from a pastor or worship leader who knows your music, e.g.
+                <blockquote>"..." <cite>Name, role</cite></blockquote> -->
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <div class="contact-card">
-                <h2 class="section-title" style="margin-bottom: 1rem;">Get In Touch</h2>
+                <h2 class="section-title" style="margin-bottom: 1rem;">Get in Touch</h2>
                 <p class="section-desc">
-                    For inquiries, scholarship discussions, or collaboration requests, please feel free to reach out via email or subscribe on YouTube.
+                    For collaboration, mentoring, or study opportunities, please email me or subscribe on YouTube.
                 </p>
-                
+
                 <a href="mailto:misganawt@gmail.com" class="email-display">misganawt@gmail.com</a>
 
                 <div style="margin-top: 1.5rem;">
-                    <a href="https://www.youtube.com/@halleluyastudio" target="_blank" class="cta-btn">
+                    <a href="https://www.youtube.com/@halleluyastudio" target="_blank" rel="noopener" class="cta-btn">
                         Subscribe on YouTube (@halleluyastudio)
                     </a>
                 </div>
